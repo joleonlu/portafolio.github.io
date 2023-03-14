@@ -1,6 +1,18 @@
 const chatHistory = document.getElementById('chat-history');
 const inputText = document.getElementById('input-text');
 const sendBtn = document.getElementById('send-btn');
+const chatContainer = document.getElementById('chat-container');
+const toggleBtn = document.getElementById('toggle-btn');
+
+
+
+
+toggleBtn.addEventListener('click', () => {
+  chatContainer.classList.toggle('minimized');
+});
+
+
+
 
 sendBtn.addEventListener('click', () => {
   const message = inputText.value.trim();
@@ -18,6 +30,9 @@ sendBtn.addEventListener('click', () => {
     inputText.value = '';
   }
 });
+
+
+
 
 function addMessageToHistory(message, isUser) {
   const messageContainer = document.createElement('div');
@@ -65,4 +80,23 @@ const initialMessages = [
 
 for (const message of initialMessages) {
   addMessageToHistory(message.message, message.isUser);
+}
+
+
+
+
+function enviarMensaje() {
+  // Obtener los valores de los campos del formulario
+  var nombre = document.forms["formulario"]["nombre"].value;
+  var telefono = document.forms["formulario"]["telefono"].value;
+  var correo = document.forms["formulario"]["correo"].value;
+  var tema = document.forms["formulario"]["tema"].value;
+  var mensaje = document.forms["formulario"]["mensaje"].value;
+  
+  // Verificar si todos los campos obligatorios han sido llenados
+  if (nombre == "" || correo == "" || tema == "" || mensaje == "") {
+    // Mostrar alerta indicando que no se puede enviar el mensaje
+    alert("No se puede enviar el mensaje. Por favor, llene todos los campos obligatorios.");
+    return false;
+  }
 }

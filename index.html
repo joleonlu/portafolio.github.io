@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+
+
+
+
     <div class="contenedor-header">
         <header>
             <div class="logo">
@@ -44,7 +51,10 @@
                 <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://www.skype.com/es/"><i class="fa-brands fa-skype"></i></a>
                 <a href="https://www.linkedin.com/in/jose-luis-leon-luna/"><i class="fa-brands fa-linkedin-in"></i></a>
-                
+               
+                <button id="toggle-btn">Chat Bot<i class="fas fa-chevron-down"></i></button>
+
+
             </div>
         </div>
     </section>
@@ -53,7 +63,8 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>PRESENTACION</h2>
-            <p><span>Hola soy jose luis leon.</span> Estoy en proceso de grado como ingeniero en software y cuento con 2 años de experiencia en
+            <p><span>Hola soy jose luis leon.</span> Estoy en proceso de grado como ingeniero en software y cuento con 2
+                años de experiencia en
                 desarrollo de software. Durante este tiempo, he trabajado en proyectos de desarrollo de
                 aplicaciones en equipo y en proyectos personales que he desarrollado por mi cuenta. Todo
                 esto me ha permitido adquirir habilidades en la resolución de problemas, el análisis y diseño
@@ -64,7 +75,7 @@
                 <div class="col">
                     <h3>Datos Personales</h3>
                     <ul>
-                        
+
                         <li>
                             <strong>Teléfono</strong>
                             (57) 3125382663
@@ -73,7 +84,7 @@
                             <strong>Email</strong>
                             joseluisleonluna@gmail.com
                         </li>
-                        
+
                         <li>
                             <strong>Dirección</strong>
                             carrera 5a # 32b-18 sur
@@ -121,15 +132,15 @@
                             <i class="fa-solid fa-camera"></i>
                             <span>FOTOS</span>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
 
-           
+
 
             <button>
-                Descargar CV  <a download="cv" href="docs/cv01.pdf">AQUI</a>
+                Descargar CV <a download="cv" href="docs/cv01.pdf">AQUI</a>
                 <span class="overlay"></span>
             </button>
         </div>
@@ -148,6 +159,7 @@
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>75%</span>
+                                <progress max="75" [value]=" "></progress>
                             </div>
                         </div>
                     </div>
@@ -156,6 +168,7 @@
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>89%</span>
+                                <progress max="100" [value]="person.age"></progress>
                             </div>
                         </div>
                     </div>
@@ -164,6 +177,7 @@
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>95%</span>
+                                <progress max="75" [value]=" "></progress>
                             </div>
                         </div>
                     </div>
@@ -172,6 +186,7 @@
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>81%</span>
+                                <progress max="75" [value]=" "></progress>
                             </div>
                         </div>
                     </div>
@@ -180,6 +195,7 @@
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>55%</span>
+                                <progress max="75" [value]=" "></progress>
                             </div>
                         </div>
                     </div>
@@ -192,6 +208,8 @@
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>80%</span>
+                                <progress max="75" [value]=" "></progress>
+                                
                             </div>
                         </div>
                     </div>
@@ -200,6 +218,7 @@
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>70%</span>
+                                <progress max="75" [value]=" "></progress>
                             </div>
                         </div>
                     </div>
@@ -208,6 +227,7 @@
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>99%</span>
+                                <progress max="75" [value]=" "></progress>
                             </div>
                         </div>
                     </div>
@@ -216,6 +236,7 @@
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>80%</span>
+                                <progress max="75" [value]=" "></progress>
                             </div>
                         </div>
                     </div>
@@ -224,6 +245,7 @@
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>94%</span>
+                                <progress max="75" [value]=" "></progress>
                             </div>
                         </div>
                     </div>
@@ -243,14 +265,18 @@
                         <h4>Ingenieria en sofware </h4>
                         <span class="casa">Politechico grancolombiano</span>
                         <span class="fecha">2017 - 2023</span>
-                        <p>Mi carrera como estudiante de ingeniería de software me ha brindado la oportunidad de participar en proyectos emocionantes y desafiantes, lo que me ha ayudado a desarrollar habilidades en trabajo en equipo y resolución de problemas. Estoy emocionado de seguir avanzando en mi carrera y aplicar mis habilidades y conocimientos en el mundo real para desarrollar soluciones innovadoras y útiles para la sociedad."</p>
+                        <p>Mi carrera como estudiante de ingeniería de software me ha brindado la oportunidad de
+                            participar en proyectos emocionantes y desafiantes, lo que me ha ayudado a desarrollar
+                            habilidades en trabajo en equipo y resolución de problemas. Estoy emocionado de seguir
+                            avanzando en mi carrera y aplicar mis habilidades y conocimientos en el mundo real para
+                            desarrollar soluciones innovadoras y útiles para la sociedad."</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
-                  
-                   
-                   
+
+
+
                 </div>
 
                 <div class="col derecha">
@@ -272,14 +298,15 @@
                         <h4>Desarrollador frontend</h4>
                         <span class="casa">J.S.S</span>
                         <span class="fecha">2022 - 2023</span>
-                        <p>Usar técnicas de elaboración en aplicaciones web utilizando los diferentes lenguajes de programación . Actualizar aplicaciones web definidas por el líder de proyecto
+                        <p>Usar técnicas de elaboración en aplicaciones web utilizando los diferentes lenguajes de
+                            programación . Actualizar aplicaciones web definidas por el líder de proyecto
                             recopilación y análisis de datos con distintos marcos detección y resolución de problemas
                             actualización base de datos sql.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -343,16 +370,18 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <form id="formulario" onsubmit="enviarMensaje(event)">
+
+                      <input type="text" placeholder="Tú Nombre" name="nombre">
+                      <input type="text" placeholder="Número telefónico" name="telefono">
+                      <input type="text" placeholder="Dirección de correo" name="correo">
+                      <input type="text" placeholder="Tema" name="tema">
+                      <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                      <button type="submit" onclick="enviarMensaje()">Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
-                </div>
+                    </form>
+                  </div>
                 <!-- Mapa -->
                 <div class="col">
                     <img src="img/sancristobal.png" alt="">
@@ -379,6 +408,7 @@
 
     <!-- footer -->
     <footer>
+        
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
@@ -387,16 +417,29 @@
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-skype"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+        
+
             
             <div id="chat-container">
                 <div id="chat-header">Chat Bot</div>
+                <div id="chat-toggle">
+                 
+                </div>
                 <div id="chat-history"></div>
                 <div id="chat-input">
                   <input type="text" id="input-text">
-                  <button id="send-btn">Send</button>
+                  <button  id="send-btn">Enviar</button>
                 </div>
               </div>
               
+           
+
+              
+
+
+
+
         </div>
     </footer>
 
@@ -404,4 +447,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
